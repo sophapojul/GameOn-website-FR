@@ -8,7 +8,7 @@ const reserve = document.querySelector('#reserve');
 /**
  * @const {HTMLButtonElement}  .modal-btn  modal buttons
  */
-const modalBtn = document.querySelectorAll('.modal-btn');
+const modalBtn = document.querySelectorAll('button[aria-haspopup="dialog"]');
 
 let modal = null;
 let previousActiveElement = null;
@@ -16,15 +16,6 @@ let previousActiveElement = null;
  * If the class name of the element with the id of 'myTopnav' is equal to 'topnav', then add
  * 'responsive' to the class name. Otherwise, set the class name to 'topnav'
  */
-
-function editNav() {
-  const x = document.getElementById('myTopnav');
-  if (x.className === 'topnav') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'topnav';
-  }
-}
 function closeModal() {
   modal.removeAttribute('style');
   modal.setAttribute('aria-hidden', 'true');
