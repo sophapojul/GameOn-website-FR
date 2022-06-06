@@ -8,7 +8,7 @@ const reserve = document.querySelector('#reserve');
 /**
  * @const {HTMLButtonElement}  .modal-btn  modal buttons
  */
-const modalBtn = document.querySelectorAll('.modal-btn');
+const modalBtn = document.querySelectorAll('button[aria-haspopup="dialog"]');
 
 let modal = null;
 let previousActiveElement = null;
